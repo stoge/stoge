@@ -1,0 +1,106 @@
+$white: #fff;
+$base-font-size: 2.2em;
+$base-line-height: 1.5em;
+
+.body-container {
+  min-height: calc(100vh - 772px);
+  background-color: #22333D;
+  .quote-container {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    .quote-text {
+      color: #fff;
+      font-size: 27px;
+      font-style: italic;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .quote{
+      position: relative;
+      font-family: 'Sanchez', serif;
+      font-size: $base-font-size;
+      line-height: $base-line-height;
+      color: $white;
+      footer {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 0.6em;
+        font-weight: 700;
+        color: darken($white, 15%);
+        float: right;
+
+        &:before {
+          content: '\2015';
+        }
+      }
+      &:after {
+        content: '\201D';
+        position: absolute;
+        top: 0.28em;
+        right: 0;
+        font-size: 6em;
+        font-style: italic;
+        color: darken($white, 7%);
+        z-index: -1;
+      }
+    }
+  }
+
+  .about-container {
+    margin-bottom: 2rem;
+    .about-text {
+      color: #F8C778
+    }
+  }
+
+  .interests-container {
+    .interest-item-container {
+      margin-bottom: 20px;
+      text-align: center;
+
+      .interest-icon {
+        color: #F8C778;
+      }
+
+      .interest-text {
+        color: ghostwhite;
+      }
+    }
+  }
+
+  .flipping-card-container {
+    cursor: pointer;
+    height: 150px;
+    perspective: 600;
+    position: relative;
+    width: 100%;
+    .flipping-card {
+      height: 100%;
+      position: absolute;
+      transform-style: preserve-3d;
+      transition: all 1s ease-in-out;
+      width: 100%;
+    }
+    .flipping-card:hover {
+      transform: rotateY(180deg);
+    }
+    .flipping-card .side {
+      backface-visibility: hidden;
+      border-radius: 1px;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+    }
+    .flipping-card .back {
+      background: #eaeaed;
+      color: #4E85BE;
+      text-align: center;
+      transform: rotateY(180deg);
+      padding: 2px;
+      margin-bottom: 10px;
+      p {
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+}

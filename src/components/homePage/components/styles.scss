@@ -1,0 +1,117 @@
+.header-container {
+  padding-top: 100px;
+  padding-bottom: 10px;
+  min-height: 600px;
+}
+
+.avatar-container {
+  padding: 50px;
+  border-style: solid;
+  border-color: rgba(248,248,255 ,0.5 );
+  border-width: 5px;
+  width: 22rem;
+  height: 22rem;
+}
+
+.avatar-image img {
+  display:block;
+  margin:auto;
+}
+
+.avatar-text {
+  margin-top: 0.9rem;
+
+  h4 {
+    text-align: center;
+    color: ghostwhite;
+  }
+  p {
+    text-align: center;
+    color: #F8C778;
+  }
+}
+
+.summary-content, .information-content {
+  padding-left: 10px;
+}
+
+.summary-content{
+  h4 {
+    color: ghostwhite;
+  }
+  .animated-content {
+    .animated-text {
+      color: oldlace;
+      max-width: 700px;
+      font-weight: 500;
+      font-size: 25px;
+    }
+  }
+}
+
+.information-content {
+  h4 {
+    color: ghostwhite;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  span {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    align-content: center;
+    &:hover {
+      cursor: pointer;
+    }
+
+    & .portfolio-contact-icon {
+      color: white;
+      position: relative;
+      top: 5px;
+      left: 5px;
+      font-size: 20px;
+      float: left;
+    }
+
+    &.linkedIn-icon {
+      background-color: #4875B4;
+    }
+
+    &.github-icon {
+      background-color: #333;
+    }
+
+    &.facebook-icon {
+      background-color: #3b5998;
+    }
+
+    &.email-icon {
+      background-color: #F8C778;
+    }
+
+    &.hover-shadow {
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 0px;
+      width: 30px;
+      float: left;
+      margin: 0;
+      background: rgba(255,255,255,0.3);
+      transition: all 1s ease;
+
+      &:hover {
+        height: 30px;
+      }
+    }
+  }
+}
+
+
+
